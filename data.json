@@ -21,6 +21,13 @@
             "title" : "title-003",
             "subtitle" : "subtitle-003",
             "brief_content" : "brief-03"
+        },
+        {
+            "name" : "content-004",
+            "img" : "https://www.khaosod.co.th/wpapp/uploads/2020/05/Buffalo-Cover.jpg",
+            "title" : "title-004",
+            "subtitle" : "subtitle-004",
+            "brief_content" : "brief-04"
         }
     ] 
 }
