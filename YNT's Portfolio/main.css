@@ -170,6 +170,12 @@ body {
   background-color: burlywood;
 }
 
+@media (max-width: 768px) {
+  .aboutme-text {
+    text-align: center;
+  }
+}
+
 /* Skills Section */
 .column {
   float: left;
