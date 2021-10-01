@@ -170,6 +170,12 @@ body {
   background-color: burlywood;
 }
 
+@media (max-width: 768px) {
+  .aboutme-text {
+    text-align: center;
+  }
+}
+
 /* Skills Section */
 .column {
   float: left;
@@ -222,6 +228,15 @@ body {
 .button-text {
   color: white;
   text-decoration: none !important;
+}
+
+.contact-item {
+  margin-right: 12px;
+  width: 16px;
+}
+
+.contactme-link {
+  text-decoration: none;
 }
 
 /* Footer Section */

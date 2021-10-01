@@ -1,50 +1,26 @@
 {
-    "data": [
+    "blog_list": [
         {
-            "name" : "ลูกทุ่ง",
-            "subtitle" : "ไอ้หนุ่มรถไถ"
+            "name" : "content-001",
+            "img" : "img-001",
+            "title" : "title-001",
+            "subtitle" : "subtitle-001",
+            "brief_content" : "brief-01"
         },
         {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
+            "name" : "content-002",
+            "img" : "img-002",
+            "title" : "title-002",
+            "subtitle" : "subtitle-002",
+            "brief_content" : "brief-02"
+            
         },
         {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
-        },
-        {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
-        },
-        {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
-        },
-        {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
-        },
-        {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
-        },
-        {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
-        },
-        {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
-        },
-        {
-            "name" : "ลูกกรุง",
-            "subtitle" : "เรือนแพ"
-        },
-        {
-            "name" : "ลูกสาว(แฟน)",
-            "subtitle" : "Myujikki"
+            "name" : "content-003",
+            "img" : "img-003",
+            "title" : "title-003",
+            "subtitle" : "subtitle-003",
+            "brief_content" : "brief-03"
         }
-        
-        
     ] 
 }
