@@ -1,5 +1,8 @@
 let showBlog = document.getElementById("blog-content")
 var blog = {};
+function readMore(name) {
+    console.log(name)
+}
 fetch("./data.json")
     .then(response => response.json())
     .then(data => {
@@ -19,6 +22,9 @@ fetch("./data.json")
                 data.blog_list[i].name
             }">
             </img>
+            <button class="btn btn-primary" onclick="readMore('${
+                data.blog_list[i].name
+            }')">Read More ...</button>
             </div>
             `
 
