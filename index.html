@@ -18,9 +18,9 @@
 <body>
     <!-- Navigation Bar (Navbar)-->
 
-    <div class="container.fluid sticky-sm-top sticky-md-top sticky-lg-top">
+    <div class="container-fluid sticky-sm-top sticky-md-top sticky-lg-top">
 
-        <div class="container.fluid navbar-button sticky-sm-top sticky-md-top sticky-lg-top">
+        <div class="container-fluid navbar-button sticky-sm-top sticky-md-top sticky-lg-top">
             <nav class=" navbar navbar-dark sticky-sm-top sticky-md-top sticky-lg-top navbar-bg">
                 <div
                     class="container-fluid d-flex justify-content-between px-5 sticky-sm-top sticky-md-top sticky-lg-top">
@@ -89,9 +89,9 @@
     </div>
 
     <!-- Welcome Section-->
-    <div class="container.fluid" id="home">
+    <div class="container-fluid" id="home">
 
-        <div class="container.fluid welcome-container">
+        <div class="container-fluid welcome-container">
             <img src="img/50536383_502646970257994_2265639177565503488_n.jpg" class="bgimg-1 " alt="welcome"
                 width="100%">
             <div class="card-img-overlay text-center welcome-grouptext">
@@ -304,14 +304,19 @@
     </div>
 
     <!-- Blog Section-->
-    <div class="container.fluid mb-5 bg-light" id="blog">
-        <h1 class="display-5 d-flex align-items-center justify-content-center mt-5">Blog</h1>
-        <div id="blog-content">
+    <div class="container-fluid mb-5 bg-light" id="blog">
+        <div class="row">
+            <h1 class="display-5 d-flex align-items-center justify-content-center mt-5">Blog</h1>
+        </div>
+        <div class="container-fluid mt-5 bg-light">
+            <div class="row" id="blog-content">
+                <!-- เอา content จาก JS Loop มาใส่-->
+            </div>
         </div>
     </div>
 
     <!-- Contact Me Section-->
-    <div class="container.fluid mb-5" id="contact">
+    <div class="container-fluid mb-5" id="contact">
         <div class="container-fluid">
             <div class="row">
                 <h1 class="display-5 d-flex align-items-center justify-content-center mt-5">Contact Me:</h1>
@@ -370,7 +375,7 @@
     </div>
 
     <!-- Footer Section-->
-    <div class="container.fluid">
+    <div class="container-fluid">
         <footer class="text-center text-lg-start text-muted footer-bg">
             <div class="text-center p-4 footer-text">
                 © 2021 Copyright:

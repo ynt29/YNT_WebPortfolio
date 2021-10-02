@@ -2,31 +2,27 @@
     "blog_list": [
         {
             "name" : "content-001",
-            "img" : "img-001",
+            "img" : "https://via.placeholder.com/300",
             "title" : "title-001",
-            "subtitle" : "subtitle-001",
             "brief_content" : "brief-01"
         },
         {
             "name" : "content-002",
-            "img" : "img-002",
+            "img" : "https://via.placeholder.com/300",
             "title" : "title-002",
-            "subtitle" : "subtitle-002",
             "brief_content" : "brief-02"
             
         },
         {
             "name" : "content-003",
-            "img" : "img-003",
+            "img" : "https://via.placeholder.com/300",
             "title" : "title-003",
-            "subtitle" : "subtitle-003",
             "brief_content" : "brief-03"
         },
         {
             "name" : "content-004",
-            "img" : "https://www.khaosod.co.th/wpapp/uploads/2020/05/Buffalo-Cover.jpg",
+            "img" : "https://via.placeholder.com/300",
             "title" : "title-004",
-            "subtitle" : "subtitle-004",
             "brief_content" : "brief-04"
         }
     ] 
