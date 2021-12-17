@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: hsl(40, 57%, 92%);
   margin: 0;
   padding: 0;
   width: 100%;
@@ -16,7 +16,31 @@ body {
 }
 
 /* Navbar */
-.navbar-brand {
+.ynt-navbar {
+  background-color: hsl(217, 38%, 28%);
+}
+
+.ynt-navbar-logo {
+  color: hsl(10, 61%, 49%);
+}
+
+.ynt-navbar-link {
+  color: hsl(10, 61%, 49%);
+}
+
+@media screen and (min-width: 993px) {
+  #ynt-navbar-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #ynt-navbar-normal {
+    display: none;
+  }
+}
+
+/* .navbar-brand {
   position: relative;
   left: 3%;
 }
@@ -54,27 +78,27 @@ body {
 
 .navbar-logo {
   color: white;
-}
+} */
 
 /* Welcome Section */
-.welcome-container {
+/* .welcome-container {
   position: relative;
   width: auto;
-}
+} */
 
-.bgimg-1 {
+/* .bgimg-1 {
   display: block;
   width: 100%;
   height: auto;
   opacity: 1;
-}
+}  */
 
-.welcome-grouptext {
+/* .welcome-grouptext {
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.5); Black see-through */
+/* color: #f1f1f1;
   width: 100%;
   transition: 0.5s ease;
   opacity: 0;
@@ -153,7 +177,7 @@ body {
 }
 
 /* About Me Section */
-.aboutme-pic {
+/* .aboutme-pic {
   border-radius: 2rem !important;
 }
 
@@ -174,10 +198,10 @@ body {
   .aboutme-text {
     text-align: center;
   }
-}
+} */
 
 /* Skills Section */
-.column {
+/* .column {
   float: left;
   width: 50%;
 }
@@ -195,19 +219,19 @@ body {
 .skills-pic:hover img {
   -webkit-transform: scale(1);
   transform: scale(1);
-}
+} */
 
 /* Clear floats after the columns */
-.row {
+/* .row {
   display: flex;
 }
 
 .column {
   flex: 50%;
-}
+} */
 
 /* Projects Section */
-.custom-carousel .carousel-caption {
+/* .custom-carousel .carousel-caption {
   position: relative;
   right: 0%;
   bottom: 1.25rem;
@@ -218,21 +242,21 @@ body {
   text-align: center;
   width: 100%;
   background-color: #0047ab;
-}
+} */
 
-.carousel-captiontext {
+/* .carousel-captiontext {
   color: white;
-}
+} */
 
 /*Blog Section */
-.wrapper-blog-pic {
+/* .wrapper-blog-pic {
   position: relative;
   max-height: 100%;
   overflow: hidden;
-}
+} */
 
 /* Contact Me Section */
-.button-text {
+/* .button-text {
   color: white;
   text-decoration: none !important;
 }
@@ -244,13 +268,13 @@ body {
 
 .contactme-link {
   text-decoration: none;
-}
+} */
 
 /* Footer Section */
-.footer-bg {
+/* .footer-bg {
   background-color: #0047ab;
 }
 
 .footer-text {
   color: white;
-}
+} */
