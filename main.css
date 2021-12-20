@@ -92,6 +92,10 @@ body {
 } */
 
 /* Welcome Section */
+#welcome-img:hover {
+  opacity: 0.6;
+}
+
 @media (min-width: 993px) {
   #welcome-img {
     padding-top: 48px;
@@ -101,6 +105,43 @@ body {
 .welcome-container {
   position: relative;
   width: auto;
+  background-color: black;
+}
+
+.home-button {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #adaaaa;
+  padding-right: 25px;
+}
+
+.home-button:active {
+  background-color: #adaaaa;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.home-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.home-button:hover span::after {
+  opacity: 1;
 }
 
 /* .welcome-container {
