@@ -338,8 +338,8 @@ body {
   overflow: hidden;
 } */
 
-/* Contact Me Section */
-/* .button-text {
+/* Contact Section */
+.button-text {
   color: white;
   text-decoration: none !important;
 }
@@ -350,14 +350,6 @@ body {
 }
 
 .contactme-link {
+  color: hsl(10, 61%, 49%);
   text-decoration: none;
-} */
-
-/* Footer Section */
-/* .footer-bg {
-  background-color: #0047ab;
 }
-
-.footer-text {
-  color: white;
-} */
