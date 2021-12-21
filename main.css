@@ -164,111 +164,27 @@ body {
   opacity: 1;
 }
 
-/* .welcome-container {
-  position: relative;
-  width: auto;
-}
-
-.bgimg-1 {
-  display: block;
-  width: 100%;
-  height: auto;
-  opacity: 1;
-}
-
-.welcome-grouptext {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
-  color: white;
-  font-size: 20px;
-  padding-top: 25%;
-  text-align: center;
-}
-
-.welcome-container:hover .welcome-grouptext {
-  opacity: 1;
-}
-
-.welcome-container:hover .bgimg-1 {
-  opacity: 0.5;
-}
-
-@media (min-width: 1025px) and (max-width: 1385px) {
-  .welcome-grouplink {
-    font-size: 16px;
-    margin: 0rem;
-  }
-
-  .welcome-pic {
-    width: 48px;
-  }
-
-  .welcome-grouptext {
-    padding-top: 5%;
-  }
-
-  .welcome-text1 {
-    font-size: 48px;
-  }
-
-  .welcome-text2 {
-    font-size: 56px;
-  }
-
-  .welcome-text3 {
-    font-size: 28px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .welcome-grouptext {
-    padding-top: 5%;
-  }
-}
-
-@media (max-width: 768px) {
-  .welcome-grouptext {
-    padding-top: 5%;
-  }
-
-  .welcome-text1 {
-    font-size: 16px;
-  }
-
-  .welcome-text2 {
-    font-size: 16px;
-  }
-
-  .welcome-text3 {
-    font-size: 14px;
-  }
-
-  .welcome-pic {
-    width: 24px;
-  }
-
-  .welcome-grouplink-text2 {
-    font-size: 16px;
-    margin: 0rem;
-  }
-} */
-
 /* About Me Section */
-/* .aboutme-pic {
+.aboutme-pic {
   border-radius: 2rem !important;
+  width: 50%;
 }
 
 .aboutme-pic:hover {
   opacity: 0.5;
 }
 
-.aboutme-text {
+.aboutme-text-2 {
+  border-bottom: 3px solid black;
+  padding-bottom: 18px;
+}
+
+.aboutme-content-2,
+.aboutme-content-3 {
+  display: none;
+}
+
+/* .aboutme-text {
   border-bottom-left-radius: 2rem !important;
   border-top-left-radius: 2rem !important;
 }
