@@ -21,5 +21,13 @@ $(document).ready (
 			$(".aboutme-content-2").css("display", "none");
 			$(".aboutme-content-3").css("display", "flex");
 		}
+	}),
+
+	$("#backward-button-2").click(function() {
+		var value = $(this).html();
+		if (value == "Back") {
+			$(".aboutme-content-3").css("display", "none");
+			$(".aboutme-content-2").css("display", "flex");
+		}
 	})
 )
