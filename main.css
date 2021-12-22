@@ -122,6 +122,60 @@ body {
   width: 50%;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .aboutme-pic {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .aboutme-pic {
+    width: 90%;
+  }
+
+  #carouselExampleControls {
+    width: 60%;
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutme-content-1 {
+    margin-bottom: 8px !important;
+  }
+
+  #biography-list {
+    margin-top: 12px;
+  }
+
+  .aboutme-pic {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutme-content-2,
+  .aboutme-content-3,
+  .aboutme-content-4 {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .grouptext-list,
+  #education-list,
+  .certification-carousel {
+    margin-top: 18px;
+  }
+
+  #my-biography,
+  #education-history,
+  #my-certification {
+    margin-top: 0px !important;
+    padding-top: 8px !important;
+  }
+}
+
 .aboutme-pic:hover {
   animation: fade 5s infinite;
 }
