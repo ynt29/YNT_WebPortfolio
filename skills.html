@@ -12,6 +12,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="main.css">
 </head>
@@ -86,84 +87,67 @@
 	<!-- Skills Section-->
 	<div class="container-fluid mb-5">
 		<div class="row">
-			<h1 class="display-5 fw-bold d-flex align-items-center justify-content-center mt-5 pt-5">Skills</h1>
+			<h1 class="display-5 fw-bold d-flex align-items-center justify-content-center mt-5 pt-5" id="skills-title">
+				Skills</h1>
 		</div>
-		<div class="d-flex justify-content-center align-items-center">
-			<h6>Test</h6>
+		<div class="container-fluid w3-animate-bottom">
+			<div class="row justify-content-evenly">
+				<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-4 col-3">
+					<h4 class="display-6 fw-bold d-flex align-items-center justify-content-center mt-5 pt-5"
+						id="skills-subtitle"> Skills
+					</h4>
+				</div>
+				<div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-8 col-9">
+					<ul class="list-unstyled mt-5 skills-list">
+						<li><span class="fw-bold">Languages:</span> Thai (Native), English (Fair)</li>
+						<li><span class="fw-bold">Typing:</span> Thai and English (72 Words per Minute)</li>
+						<li><span class="fw-bold">Basic Document Programs</span> (Docs, Spreadsheet, Presentation both
+							Microsoft and Google)</li>
+						<li><span class="fw-bold">Readiness to learn new things</span></li>
+						<li><span class="fw-bold">Communication in public</span></li>
+						<li><span class="fw-bold">Be punctual</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row justify-content-evenly">
+				<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-4 col-3">
+					<h4 class="display-6 fw-bold d-flex align-items-center justify-content-center mt-5 pt-5"
+						id="toolbox-subtitle"> Toolbox
+					</h4>
+				</div>
+				<div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-8 col-9">
+					<ul class="list-unstyled mt-5 toolbox-list">
+						<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+								alt="html5" width="28px" />
+							<span class="fw-bold"> HTML5</span>
+						</li>
+						<li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+								alt="css3" width="28px" />
+							<span class="fw-bold">CSS3 (With Frameworks e.g. Bootstrap, w3.css)</span>
+						</li>
+						<li><img src="https://www.javascripttutorial.net/wp-content/uploads/2021/04/JavaScript-Tutorial.svg"
+								alt="js" width="28px" />
+							<span class="fw-bold"> JavaScript (With jQuery)</span>
+						</li>
+						<li><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ps_appicon.svg"
+								alt="photoshop" width="28px" />
+							<span class="fw-bold"> Adobe Photoshop </span>
+						</li>
+						<li><img src="https://access.tufts.edu/sites/default/files/2017-10/Tableau.svg" alt="tableau"
+								width="28px" />
+							<span class="fw-bold"> Tableau Studio </span>
+						</li>
+						<li><img src="https://www.gstatic.com/analytics-suite/header/suite/v2/ic_data_studio.svg"
+								alt="google-data-studio" width="28px" />
+							<span class="fw-bold"> Google Data Studio </span>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
 
-	<!-- <div class="container-fluid mb-5 bg-light" id="skills">
-		<div class="row">
-			<h1 class="display-5 d-flex align-items-center justify-content-center mt-5">Skills</h1>
-			<h3 class="d-flex align-items-center justify-content-center mt-2">Web Development & Data Analytics
-			</h3>
-		</div>
-
-		<div class="row  row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
-			<div class="col d-flex justify-content-center">
-				<div class="card skills-pic">
-					<img src="img/html5.png" class="card-img-top" alt="html5">
-					<div class="card-body">
-						<h5 class="card-title d-flex justify-content-center">HTML</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col d-flex justify-content-center">
-				<div class="card skills-pic">
-					<img src="img/css3.png" class="card-img-top" alt="css3">
-					<div class="card-body">
-						<h5 class="card-title d-flex justify-content-center">CSS</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col  d-flex justify-content-center">
-				<div class="card skills-pic">
-					<img src="img/js.png" class="card-img-top" alt="js">
-					<div class="card-body">
-						<h5 class="card-title d-flex justify-content-center">JavaScript</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col  d-flex justify-content-center">
-				<div class="card skills-pic">
-					<img src="img/ps.png" class="card-img-top" alt="ps">
-					<div class="card-body">
-						<h5 class="card-title d-flex justify-content-center">Adobe Photoshop</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col d-flex justify-content-center">
-				<div class="card mb-5 skills-pic" style="width: 14rem">
-					<img src="img/excel.png" class="card-img-top" alt="excel">
-					<div class="card-body">
-						<h5 class="card-title d-flex justify-content-center align-items-center text-center">Spreadsheet
-							(Excel, Google Sheets)
-						</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col d-flex justify-content-center">
-				<div class="card mb-5 skills-pic">
-					<img src="img/tableau.png" class="card-img-top" alt="tableau">
-					<div class="card-body">
-						<h5 class="card-title d-flex justify-content-center">Tableau Public</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col d-flex justify-content-center ">
-				<div class="card mb-5 skills-pic">
-					<img src="img/gds.png" class="card-img-top" alt="google-data-studio">
-					<div class="card-body">
-						<h5 class="card-title d-flex justify-content-center text-center">Google Data Studio</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-	<script src="js/bootstrap.min.js"></script>
-	<script src="blog-content.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="blog-content.js"></script>
 </body>
 
 </html>
