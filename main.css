@@ -12,7 +12,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  /* height: 100%; */
   overflow: hidden;
   max-height: 100vh;
 }
@@ -52,46 +51,6 @@ body {
   color: rgb(25, 25, 25);
 }
 
-/* .navbar-brand {
-  position: relative;
-  left: 3%;
-}
-
-.nav {
-  position: relative;
-  right: 3%;
-}
-
-.nav-link {
-  color: white;
-  padding: 0px 18px;
-}
-
-@media screen and (min-width: 769px) {
-  .navbar-button {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-main {
-    display: none;
-  }
-
-  .menu-list .nav-item {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-}
-
-.navbar-bg {
-  background-color: #0047ab;
-}
-
-.navbar-logo {
-  color: white;
-} */
-
 /* Welcome Section */
 #welcome-img {
   background-image: url(./img/50536383_502646970257994_2265639177565503488_n.jpg);
@@ -100,16 +59,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-#welcome-img:hover {
   opacity: 0.6;
-}
-
-@media (max-width: 992px) {
-  #welcome-img {
-    opacity: 0.6;
-  }
 }
 
 @media (min-width: 993px) {
@@ -124,11 +74,13 @@ body {
   background-color: black;
 }
 
-.welcome-text h1 {
+.welcome-text h1,
+.welcome-text h2 {
   color: rgb(236, 219, 186);
 }
 
-.home-button {
+.home-button,
+#forward-button-1 {
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -171,7 +123,16 @@ body {
 }
 
 .aboutme-pic:hover {
-  opacity: 0.5;
+  animation: fade 5s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
 }
 
 .aboutme-text-2 {
@@ -180,25 +141,34 @@ body {
 }
 
 .aboutme-content-2,
-.aboutme-content-3 {
+.aboutme-content-3,
+.aboutme-content-4 {
   display: none;
 }
 
-/* .aboutme-text {
-  border-bottom-left-radius: 2rem !important;
-  border-top-left-radius: 2rem !important;
+#forward-button-1:hover,
+#forward-button-2:hover,
+#forward-button-3:hover,
+#backward-button-1:hover,
+#backward-button-2:hover,
+#backward-button-3:hover {
+  background-color: #adaaaa;
 }
 
-.aboutme-bg {
-  background-color: burlywood;
+#forward-button-1:active,
+#forward-button-2:active,
+#forward-button-3:active,
+#backward-button-1:active,
+#backward-button-2:active,
+#backward-button-3:active {
+  background-color: #adaaaa;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-@media (max-width: 768px) {
-  .aboutme-text {
-    text-align: center;
-  }
-} */
-
+.certification-carousel {
+  width: 80%;
+}
 /* Skills Section */
 /* .column {
   float: left;

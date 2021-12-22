@@ -29,5 +29,21 @@ $(document).ready (
 			$(".aboutme-content-3").css("display", "none");
 			$(".aboutme-content-2").css("display", "flex");
 		}
+	}),
+
+	$("#forward-button-3").click(function() {
+		var value = $(this).html();
+		if (value == "Next") {
+			$(".aboutme-content-3").css("display", "none");
+			$(".aboutme-content-4").css("display", "flex");
+		}
+	}),
+
+	$("#backward-button-3").click(function() {
+		var value = $(this).html();
+		if (value == "Back") {
+			$(".aboutme-content-4").css("display", "none");
+			$(".aboutme-content-3").css("display", "flex");
+		}
 	})
 )
