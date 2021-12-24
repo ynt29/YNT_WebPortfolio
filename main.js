@@ -1,5 +1,5 @@
 $(document).ready (
-	$("#forward-button-1").click(function () {
+	$(".forward-button-1").click(function () {
 		var value = $(this).html();
 		if (value == "Next") {
 			$(".aboutme-content-1").css("display", "none");
@@ -7,7 +7,7 @@ $(document).ready (
 		}
 	}),
 
-	$("#backward-button-1").click(function () {
+	$(".backward-button-1").click(function () {
 		var value = $(this).html();
 		if (value == "Back") {
 			$(".aboutme-content-2").css("display", "none");
@@ -15,7 +15,7 @@ $(document).ready (
 		}
 	}),
 
-	$("#forward-button-2").click(function () {
+	$(".forward-button-2").click(function () {
 		var value = $(this).html();
 		if (value == "Next") {
 			$(".aboutme-content-2").css("display", "none");
@@ -23,7 +23,7 @@ $(document).ready (
 		}
 	}),
 
-	$("#backward-button-2").click(function() {
+	$(".backward-button-2").click(function() {
 		var value = $(this).html();
 		if (value == "Back") {
 			$(".aboutme-content-3").css("display", "none");
@@ -31,7 +31,7 @@ $(document).ready (
 		}
 	}),
 
-	$("#forward-button-3").click(function() {
+	$(".forward-button-3").click(function() {
 		var value = $(this).html();
 		if (value == "Next") {
 			$(".aboutme-content-3").css("display", "none");
@@ -39,7 +39,7 @@ $(document).ready (
 		}
 	}),
 
-	$("#backward-button-3").click(function() {
+	$(".backward-button-3").click(function() {
 		var value = $(this).html();
 		if (value == "Back") {
 			$(".aboutme-content-4").css("display", "none");

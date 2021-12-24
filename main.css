@@ -1,4 +1,5 @@
-/* Common */
+/* Common Variable */
+/* General */
 * {
   font-family: "Lexend", "Prompt", sans-serif;
 }
@@ -8,7 +9,7 @@ html {
 }
 
 body {
-  background-color: hsl(40, 57%, 92%);
+  background-color: #f6eedf;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -16,42 +17,60 @@ body {
   max-height: 100vh;
 }
 
-/* Navbar */
-.ynt-navbar {
-  background-color: hsl(217, 38%, 28%);
-}
-
-.ynt-navbar-logo {
-  color: hsl(10, 61%, 49%);
-}
-
-.ynt-navbar-link {
-  color: hsl(10, 61%, 49%);
-}
-
-@media screen and (min-width: 993px) {
-  #ynt-navbar-small {
-    display: none;
+@media (max-width: 576px) {
+  body {
+    overflow: auto;
   }
 }
 
-@media screen and (max-width: 992px) {
+/* Navbar Section */
+.ynt-navbar {
+  background-color: #2c4163;
+}
+
+.ynt-navbar-logo {
+  color: #c94a31;
+}
+
+.ynt-navbar-logo :hover {
+  color: #8fdbd5;
+}
+
+.ynt-navbar-logo :active {
+  color: #191919;
+}
+
+.ynt-navbar-link {
+  color: #c94a31;
+}
+
+.ynt-navbar-link :hover {
+  color: #8fdbd5;
+}
+
+.ynt-navbar-link :active {
+  color: #191919;
+}
+
+@media (max-width: 992px) {
   #ynt-navbar-normal {
     display: none;
   }
 }
 
-.ynt-navbar-logo:hover,
-.ynt-navbar-link:hover {
-  color: rgb(149, 209, 204);
-}
-
-.ynt-navbar-logo:active,
-.ynt-navbar-link:active {
-  color: rgb(25, 25, 25);
+@media (min-width: 993px) {
+  #ynt-navbar-small {
+    display: none;
+  }
 }
 
 /* Welcome Section */
+.welcome-container {
+  position: relative;
+  width: auto;
+  background-color: black;
+}
+
 #welcome-img {
   background-image: url(./img/50536383_502646970257994_2265639177565503488_n.jpg);
   height: 100vh;
@@ -68,31 +87,27 @@ body {
   }
 }
 
-.welcome-container {
-  position: relative;
-  width: auto;
-  background-color: black;
-}
-
 .welcome-text h1,
 .welcome-text h2 {
-  color: rgb(236, 219, 186);
+  color: #ecdbba;
 }
 
-.home-button,
-#forward-button-1 {
+.home-button {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-.home-button:hover {
+.home-button :hover {
   background-color: #adaaaa;
   padding-right: 25px;
 }
 
-.home-button:active {
+.home-button :active {
   background-color: #adaaaa;
+  -webkit-box-shadow: 0 5px #666;
   box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
   transform: translateY(4px);
 }
 
@@ -100,6 +115,7 @@ body {
   cursor: pointer;
   display: inline-block;
   position: relative;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -109,17 +125,30 @@ body {
   opacity: 0;
   top: 0;
   right: -15px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.home-button:hover span::after {
+.home-button :hover span::after {
   opacity: 1;
+}
+
+#forward-button-1 {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 /* About Me Section */
 .aboutme-pic {
   border-radius: 2rem !important;
   width: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .aboutme-pic {
+    width: 90%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -129,21 +158,15 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .aboutme-pic {
-    width: 90%;
-  }
-
   #carouselExampleControls {
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
 
 @media (max-width: 576px) {
-  body {
-    overflow: auto;
-  }
-
   .aboutme-title {
     margin-top: 0px !important;
     padding-top: 8px !important;
@@ -154,41 +177,27 @@ body {
   .aboutme-content-1 {
     margin-bottom: 8px !important;
   }
+}
 
-  #biography-list {
-    margin-top: 12px;
-  }
-
+@media (max-width: 767px) {
   .aboutme-pic {
     width: 50%;
     height: 100%;
   }
 }
 
-@media (max-width: 992px) {
-  .aboutme-content-2,
-  .aboutme-content-3,
-  .aboutme-content-4 {
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
-  }
-
-  .grouptext-list,
-  #education-list,
-  .certification-carousel {
-    margin-top: 18px;
-  }
-
-  #my-biography,
-  #education-history,
-  #my-certification {
-    margin-top: 0px !important;
-    padding-top: 8px !important;
-  }
+.aboutme-pic :hover {
+  -webkit-animation: fade 5s infinite;
+  animation: fade 5s infinite;
 }
 
-.aboutme-pic:hover {
-  animation: fade 5s infinite;
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
 }
 
 @keyframes fade {
@@ -200,9 +209,10 @@ body {
   }
 }
 
-.aboutme-text-2 {
-  border-bottom: 3px solid black;
-  padding-bottom: 18px;
+@media (max-width: 767px) {
+  #biography-list {
+    margin-top: 12px;
+  }
 }
 
 .aboutme-content-2,
@@ -211,31 +221,99 @@ body {
   display: none;
 }
 
-#forward-button-1:hover,
-#forward-button-2:hover,
-#forward-button-3:hover,
-#backward-button-1:hover,
-#backward-button-2:hover,
-#backward-button-3:hover {
-  background-color: #adaaaa;
+@media (max-width: 992px) {
+  .aboutme-content-2,
+  .aboutme-content-3,
+  .aboutme-content-4 {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
 }
 
-#forward-button-1:active,
-#forward-button-2:active,
-#forward-button-3:active,
-#backward-button-1:active,
-#backward-button-2:active,
-#backward-button-3:active {
-  background-color: #adaaaa;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+@media (max-width: 992px) {
+  .grouptext-list,
+  #education-list {
+    margin-top: 18px;
+  }
 }
 
 .certification-carousel {
   width: 80%;
 }
+
+@media (max-width: 992px) {
+  .certification-carousel {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  #my-biography,
+  #education-history,
+  #my-certification {
+    margin-top: 0px !important;
+    padding-top: 8px !important;
+  }
+}
+
+.aboutme-text-2 {
+  border-bottom: 3px solid black;
+  padding-bottom: 18px;
+}
+
+.forward-button-1:hover,
+.backward-button-1:hover {
+  background-color: #adaaaa;
+}
+
+.forward-button-1:active,
+.backward-button-1:active {
+  background-color: #adaaaa;
+  -webkit-box-shadow: 0 5px #666;
+  box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+.forward-button-2:hover,
+.backward-button-2:hover {
+  background-color: #adaaaa;
+}
+
+.forward-button-2:active,
+.backward-button-2:active {
+  background-color: #adaaaa;
+  -webkit-box-shadow: 0 5px #666;
+  box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+.forward-button-3:hover,
+.backward-button-3:hover {
+  background-color: #adaaaa;
+}
+
+.forward-button-3:active,
+.backward-button-3:active {
+  background-color: #adaaaa;
+  -webkit-box-shadow: 0 5px #666;
+  box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
 /* Skills Section */
-.skills-list li,
+.skills-list li {
+  padding-top: 18px;
+}
+
+@media (max-width: 576px) {
+  .skills-list {
+    margin-top: 0px !important;
+  }
+}
+
 .toolbox-list li {
   padding-top: 18px;
 }
@@ -244,60 +322,18 @@ body {
   padding-left: 20px;
 }
 
+@media (max-width: 576px) {
+  .toolbox-list {
+    margin-top: 0px !important;
+  }
+}
+
 @media (max-width: 991px) {
   #skills-title {
     padding-top: 0px !important;
     margin-top: 28px !important;
   }
 }
-
-@media (max-width: 576px) {
-  #skills-title {
-    padding-top: 0px !important;
-    margin-top: 28px !important;
-  }
-
-  .skills-list {
-    margin-top: 0px !important;
-  }
-
-  .toolbox-list {
-    margin-top: 0px !important;
-  }
-
-  body {
-    overflow: auto;
-  }
-}
-
-/* .column {
-  float: left;
-  width: 50%;
-}
-
-.skills-pic {
-  width: 14rem;
-}
-
-.skills-pic img {
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.skills-pic:hover img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-} */
-
-/* Clear floats after the columns */
-/* .row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-} */
 
 /* Projects Section */
 /* .custom-carousel .carousel-caption {
@@ -316,14 +352,12 @@ body {
 .carousel-captiontext {
   color: white;
 } */
-
-/*Blog Section */
+/* Blog Section */
 /* .wrapper-blog-pic {
   position: relative;
   max-height: 100%;
   overflow: hidden;
 } */
-
 /* Contact Section */
 .button-text {
   color: white;
@@ -336,6 +370,7 @@ body {
 }
 
 .contactme-link {
-  color: hsl(10, 61%, 49%);
+  color: #c94a31;
   text-decoration: none;
 }
+/*# sourceMappingURL=main.css.map */
