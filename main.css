@@ -133,10 +133,17 @@ body {
   opacity: 1;
 }
 
-#forward-button-1 {
+.forward-button-1 {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
+  position: relative;
+  left: 42.5%;
+}
+
+.backward-button-3 {
+  position: relative;
+  left: 40%;
 }
 
 /* About Me Section */

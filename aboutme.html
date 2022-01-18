@@ -23,7 +23,7 @@
 		<div class="container-fluid sticky-lg-top sticky-xl-top sticky-xxl-top">
 			<nav class="navbar fixed-top navbar-expand-lg ynt-navbar">
 				<div class="container-fluid mx-5">
-					<a class="navbar-brand ynt-navbar-logo" href="index.html">YOSSAKORN</a>
+					<a class="navbar-brand ynt-navbar-logo fw-bold" href="index.html">YOSSAKORN</a>
 					<ul class="nav justify-content-end">
 						<li class="nav-item">
 							<a class="nav-link ynt-navbar-link" href="./aboutme.html">ABOUT ME</a>
@@ -97,7 +97,7 @@
 			<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center">
 				<img src="./img/ynt29.png" alt="mypic-about" class="aboutme-pic">
 			</div>
-			<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center">
+			<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
 				<ul class="list-unstyled grouptext-list">
 					<li class="display-6 text-center" id="test-text">Hello!</li>
 					<li class="display-6 text-center aboutme-text-2"> I'm <strong>Yossakorn Napeang</strong></li>
@@ -117,14 +117,15 @@
 			<h1 class="display-5 fw-bold d-flex align-items-center justify-content-center mt-5 pt-5 aboutme-title">About
 				Me</h1>
 		</div>
-		<div class="row align-items-start justify-content-center aboutme-content-2 w3-animate-top">
+		<div class="row aboutme-content-2 w3-animate-top">
 			<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-				<h1 class="display-5 fw-bold d-flex align-items-center justify-content-center mt-5 pt-5"
-					id="my-biography">My
+				<h1 class="display-5 fw-bold d-flex align-items-end justify-content-center mt-5 pt-5" id="my-biography">
+					My
 					Biography
 				</h1>
 			</div>
-			<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" id="biography-list">
+			<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-start"
+				id="biography-list">
 				<ul class="list-unstyled grouptext-list-2">
 					<li class="text-start"><span class="fw-bold">Name:</span> Yossakorn Napeang (ยศกร นาแพง)</li>
 					<li class="text-start mt-2"><span class="fw-bold">Nickname:</span> Tie (ไทด์)</li>
@@ -141,8 +142,10 @@
 					<li class="text-start mt-2"><span class="fw-bold">Hobby:</span> Singing (My favorite type of music
 						is Luk thung), Watching
 						Football, Reading</li>
-					<button class="btn btn-light mt-3 backward-button-1" role="button">Back</button>
-					<button class="btn btn-light mt-3 forward-button-2" role="button">Next</button>
+					<div class="group-button d-flex justify-content-center">
+						<button class="btn btn-light mt-3 backward-button-1 me-4" role="button">Back</button>
+						<button class="btn btn-light mt-3 forward-button-2" role="button">Next</button>
+					</div>
 				</ul>
 			</div>
 		</div>
@@ -176,8 +179,10 @@
 						<br><span class="fw-bold">Bachelor Degree:</span> Ramkhamhaeng University (With Political
 						Science)
 					</li>
-					<button class="btn btn-light mt-3 backward-button-2" role="button">Back</button>
-					<button class="btn btn-light mt-3 forward-button-3" role="button">Next</button>
+					<div class="group-button d-flex justify-content-center">
+						<button class="btn btn-light mt-3 backward-button-2 me-4" role="button">Back</button>
+						<button class="btn btn-light mt-3 forward-button-3" role="button">Next</button>
+					</div>
 				</ul>
 			</div>
 		</div>
