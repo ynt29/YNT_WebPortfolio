@@ -13,14 +13,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden;
   max-height: 100vh;
-}
-
-@media (max-width: 576px) {
-  body {
-    overflow: auto;
-  }
 }
 
 /* Navbar Section */
@@ -343,8 +336,12 @@ body {
 }
 
 /* Projects Section */
-.carousel-inner > .carousel-item > img {
-  margin: 0 auto;
+.card {
+  border-radius: 10px;
+}
+
+.card-body > a {
+  border-radius: 20px;
 }
 
 /* Blog Section */
@@ -353,6 +350,7 @@ body {
   max-height: 100%;
   overflow: hidden;
 } */
+
 /* Contact Section */
 .button-text {
   color: white;
